@@ -7,11 +7,96 @@ $(document).ready(function(){
     $('#menu_products').css('border-bottom', 'none');
     $('#content_introduce').show();
     $('#content_products').hide();
+    $('#content_description_wrapper').hide();
   });
   $('#menu_products').click(function(){
     $('#menu_introduce').css('border-bottom', 'none');
     $('#menu_products').css('border-bottom', '1px solid');
     $('#content_introduce').hide();
     $('#content_products').show();
+    $('#content_description_wrapper').hide();
+    $('html,body').animate({
+        scrollTop: $("body").offset().top},
+        'slow');
+  });
+  $('.products_img').click(function(){
+    $('html,body').animate({
+        scrollTop: $("body").offset().top},
+        'slow');
+  });
+  $('#WORX').click(function(){
+    $('#content_description_wrapper').show();
+    $('#WORX_description').show();
+    $('.content_products_description').not('#WORX_description').hide();
+  });
+  $('#Hultafors').click(function(){
+    $('#content_description_wrapper').show();
+    $('#Hultafors_description').show();
+    $('.content_products_description').not('#Hultafors_description').hide();
+  });
+  $('#Malco_TSCM').click(function(){
+    $('#content_description_wrapper').show();
+    $('#Malco_TSCM_description').show();
+    $('.content_products_description').not('#Malco_TSCM_description').hide();
+  });
+  $('#RYOBI_Laser').click(function(){
+    $('#content_description_wrapper').show();
+    $('#RYOBI_Laser_description').show();
+    $('.content_products_description').not('#RYOBI_Laser_description').hide();
+  });
+  $('#RYOBI_ES2000').click(function(){
+    $('#content_description_wrapper').show();
+    $('#RYOBI_ES2000_description').show();
+    $('.content_products_description').not('#RYOBI_ES2000_description').hide();
+  });
+  $('#RYOBI_Moisture').click(function(){
+    $('#content_description_wrapper').show();
+    $('#RYOBI_Moisture_description').show();
+    $('.content_products_description').not('#RYOBI_Moisture_description').hide();
+  });
+  $('#RYOBI_Scope').click(function(){
+    $('#content_description_wrapper').show();
+    $('#RYOBI_Scope_description').show();
+    $('.content_products_description').not('#RYOBI_Scope_description').hide();
+  });
+  $('#Gorilla_Gripper').click(function(){
+    $('#content_description_wrapper').show();
+    $('#Gorilla_Gripper_description').show();
+    $('.content_products_description').not('#Gorilla_Gripper_description').hide();
+  });
+  $('#Wolfcraft_Belt').click(function(){
+    $('#content_description_wrapper').show();
+    $('#Wolfcraft_Belt_description').show();
+    $('.content_products_description').not('#Wolfcraft_Belt_description').hide();
+  });
+  $('#Milescraft').click(function(){
+    $('#content_description_wrapper').show();
+    $('#Milescraft_description').show();
+    $('.content_products_description').not('#Milescraft_description').hide();
+  });
+  $('#Rockler').click(function(){
+    $('#content_description_wrapper').show();
+    $('#Rockler_description').show();
+    $('.content_products_description').not('#Rockler_description').hide();
+  });
+  $('#Wolfcraft_Clamp').click(function(){
+    $('#content_description_wrapper').show();
+    $('#Wolfcraft_Clamp_description').show();
+    $('.content_products_description').not('#Wolfcraft_Clamp_description').hide();
+  });
+  $('#RAK').click(function(){
+    $('#content_description_wrapper').show();
+    $('#RAK_description').show();
+    $('.content_products_description').not('#RAK_description').hide();
+  });
+  $('#column').click(function(){
+    $('#content_description_wrapper').show();
+    $('#column_description').show();
+    $('.content_products_description').not('#column_description').hide();
+  });
+  $('#Xtend_Climb').click(function(){
+    $('#content_description_wrapper').show();
+    $('#Xtend_Climb_description').show();
+    $('.content_products_description').not('#Xtend_Climb_description').hide();
   });
 });
