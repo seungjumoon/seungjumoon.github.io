@@ -43,7 +43,7 @@ body{
   top:0;
   left: 0;
   width: 100%;
-  height: 100px;
+  height: 80px;
   padding: 20px 0 0 25px;
   font-family: tGodic;
   font-style: normal;
@@ -55,7 +55,8 @@ body{
 }
 .menu_wrapper{
   position: fixed;
-  width: 35%;
+  overflow: hidden;
+  width: 25%;
   height: 100%;
   top: 100px;
   left: 0;
@@ -76,14 +77,19 @@ body{
 .menu_wrapper li span{
   cursor: pointer;
 }
+#menu_introduce{
+  border-bottom: 1px solid black;
+}
 .content_wrapper{
+  padding: 0;
   position: absolute;
-  width: 55%;
+  width: 71%;
   top: 100px;
-  left: 35%;
+  left: 29%;
 }
 #content_introduce{
-  display: none;
+  top: 0;
+  width: 78%;
   font-family: "seMyeongjo";
   font-style: normal;
   font-weight: normal;
@@ -92,18 +98,98 @@ body{
   line-height: 1.6rem;
 }
 #content_products{
+  position: relative;
+  width: 93%;
   display: none;
-  font-family: "seMyeongjo";
+  font-family: "tGodic";
   font-style: normal;
   font-weight: normal;
-  font-size: 1rem;
+  font-size: .75rem;
   letter-spacing: -.06rem;
-  line-height: 1.6rem;
+  float: left;
+}
+.container{
+  position: relative
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+
+  -webkit-box-orient: horizontal; 
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  flex-direction: row;
+
+/*  -webkit-box-pack: center;
+  -moz-box-pack: center;*/
+  justify-content: flex-start;
+
+  -webkit-box-align: flex-start;
+  -moz-box-align: flex-start;
+  box-align: flex-start;  
+  align-items: flex-start;
+  align-content: flex-start;
+}
+.products_img{
+  cursor: pointer;
+  width: 25%;
+  height: auto;
+  margin-bottom: 70px;
+  margin-left: 30px;
 }
 .credit{
   line-height: 1rem;
 }
+#content_description_wrapper{
+  position: relative;
+  display: none;
+  float: left;
+  width: 100%;
+  margin-bottom: 120px;
+}
+.content_products_description{
+  display: none;
+}
+.products_description_img{
+  position: relative;
+  width: 60%;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 60px;
+}
+.products_name{
+  padding-top: 10px;
+}
+.products_description{
+  position: relative;
+  margin-top: 15px;
+  font-family: "seMyeongjo";
+  font-style: normal;
+  font-weight: normal;
+  font-size: .82rem;
+  letter-spacing: -.06rem;
+  line-height: 1.3rem;
+}
+.detail{
+  float: right;
+  margin-top: 25px;
+  margin-right: 30px;
+  font-size: .59rem;
+  letter-spacing: -0.03rem;
+  line-height: .87rem;
+}
+.detail_underline{
+  border-bottom: .7px solid black;
+}
+.margin{
+  position: relative;
+  height: 50px;
+}
 a{
+  color: black;
   font-size: .8rem;
   text-decoration: none;
   border-bottom: .85px solid;
@@ -113,6 +199,7 @@ a:visited{
   text-decoration: none;
   border-bottom: .85px solid;
 }
+/*모바일*/
 @media only screen and (max-width: 768px){
   .header{
   position: absolute;
@@ -141,13 +228,30 @@ a:visited{
 }
 .menu_wrapper li {
   display: inline;
+  margin: 0 4px;
 }
 .content_wrapper{
   position: absolute;
   width: 90%;
   padding: 15px;
-  top: 110px;
+  top: 120px;
   left: 50%;
   transform: translate(-50%, 0%);
 }
-  }
+#content_introduce{
+  width: 100%;
+}
+#content_products{
+  width: 100%;
+}
+.products_img{
+  width: 40%;
+  height: auto;
+}
+.detail{
+  margin-right: 50px;
+}
+.products_description_img{
+  width: 100%;
+}
+}
