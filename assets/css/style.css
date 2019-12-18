@@ -166,12 +166,12 @@ body{
 .products_description{
   position: relative;
   margin-top: 15px;
-  font-family: "seMyeongjo";
+  font-family: "tGodic";
   font-style: normal;
   font-weight: normal;
-  font-size: .82rem;
+  font-size: .71rem;
   letter-spacing: -.06rem;
-  line-height: 1.3rem;
+  line-height: 1.1rem;
 }
 .detail{
   float: right;
@@ -252,9 +252,12 @@ a:visited{
   margin-right: 50px;
 }
 .products_description{
-  font-size: .9rem;
+  font-family: "tGodic";
+  font-style: normal;
+  font-weight: normal;
+  font-size: .75rem;
   letter-spacing: -.06rem;
-  line-height: 1.4rem;
+  line-height: 1.2rem;
 }
 .products_description_img{
   width: 100%;
