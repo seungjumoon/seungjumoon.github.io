@@ -251,6 +251,11 @@ a:visited{
 .detail{
   margin-right: 50px;
 }
+.products_description{
+  font-size: .9rem;
+  letter-spacing: -.06rem;
+  line-height: 1.4rem;
+}
 .products_description_img{
   width: 100%;
 }
